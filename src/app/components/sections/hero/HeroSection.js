@@ -22,7 +22,7 @@ const HeroSection = () => {
             >
                 <h1>Let's Create Your Dream Interior</h1>
                 <p>The world needs innovators and problem solvers who turn challenges into greater opportunities.</p>
-                <DarkButton title="Get Started" src={'/icons/arrows/arrowRight.svg'} color="black" />
+                <DarkButton title="Get Started" src={"/icons/arrows/arrowRight.svg"} color="black" />
             </motion.div>
         </section>
     );
