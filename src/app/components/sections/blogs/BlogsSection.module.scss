@@ -1,0 +1,48 @@
+.BlogsSection {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0;
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+        .title {
+            font-family: "DM Serif Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 62px;
+            text-align: center;
+            letter-spacing: 0.22px;
+            margin: 0;
+
+            color: #292f36;
+        }
+
+        .subtitle {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            text-align: center;
+            letter-spacing: 0.22px;
+            margin: 0;
+
+            color: #4d5053;
+            max-width: 50%;
+        }
+
+        .BlogsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.ProjectsSection {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            font-family: "DM Serif Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 47px;
+            line-height: 62px;
+            text-align: center;
+            letter-spacing: 0.22px;
+            margin: 20px;
+
+            color: #292f36;
+        }
+
+        .subtitle {
+            width: 65%;
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            text-align: center;
+            letter-spacing: 0.22px;
+            margin-bottom: 40px;
+
+            color: #4d5053;
+        }
+
+        .ProjectsContainer {
+            padding-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            position: relative; // Добавляем относительное позиционирование для управления дочерними элементами
+
+            &:not(:hover) {
+                .ProjectBlock {
+                    filter: blur(0); // Убираем блюр на наведённой карточке
+                }
+            }
+
+            .ProjectBlock {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                width: 45%;
+                padding: 15px;
+                border: 0.1px dashed #000;
+                border-radius: 10px 80px 10px 10px;
+                backdrop-filter: blur(10px); // Регулирует степень размытия
+                background: rgba(255, 255, 255, 0.2); // Цвет с прозрачностью
+                transition: transform 0.3s ease, filter 0.3s ease; // Плавный переход для масштаба и фильтра
+                cursor: pointer;
+                filter: blur(5px);
+
+                &:hover {
+                    transform: scale(1.05); // Увеличиваем карточку
+                    z-index: 2; // Повышаем карточку при наведении
+                    filter: blur(0); // Убираем блюр на наведённой карточке
+                    transition-duration: 500ms;
+                    transform: translateY(-10px) scale(1.05);
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+                }
+
+                .image {
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 0 80px 0 0;
+                    width: 100%;
+                    height: 640px;
+                }
+
+                .info {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .infoText {
+                        display: flex;
+                        flex-direction: column;
+
+                        .title {
+                            font-family: "DM Serif Display";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 38px;
+                            letter-spacing: 0.22px;
+                            margin: 0;
+            
+                            color: #292f36;
+            
+                        }
+            
+                        .subtitle {
+                            font-family: "Jost";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 22px;
+                            line-height: 33px;
+                            letter-spacing: 0.22px;
+                            margin: 0;
+            
+                            color: #4d5053;
+            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

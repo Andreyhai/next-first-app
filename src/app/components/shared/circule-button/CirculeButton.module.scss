@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #e6dfd8;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.07);
+        transition-duration: 600ms;
+    }
+}

@@ -1,0 +1,101 @@
+.AboutSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        gap: 16px;
+
+        .infoBlock {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 60px;
+            padding-bottom: 100px;
+
+            h3 {
+                // width: 60%;
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 65px;
+                letter-spacing: 0.22px;
+
+                color: #292F36;
+            }
+
+            p {
+                width: 90%;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 33px;
+                letter-spacing: 0.22px;
+
+                color: #4D5053;
+            }
+
+            .contactBlock {
+                display: flex;
+                gap: 30px;
+
+                .phoneBlock {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    width: fit-content;
+                    border-radius: 50%;
+                    background: #fbe0c6;
+                    
+                }
+
+                .constactInfo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    // gap: 10px;
+
+                    .phoneNumber {
+                        font-family: 'Jost';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 36px;
+                        letter-spacing: 0.22px;
+
+                        color: #4D5053;
+                    }
+
+                    .phoneInfo {
+                        font-family: 'Jost';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 33px;
+                        letter-spacing: 0.22px;
+
+                        color: #4D5053;
+                    }
+                }
+            }
+        }
+
+        .imageBlock {
+            background-image: url('/backgrounds/AboutBG.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0 326px 0 123px;
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+        }
+    }
+}

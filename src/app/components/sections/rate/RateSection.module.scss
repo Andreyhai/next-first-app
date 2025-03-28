@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+.RateSection {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        max-width: 1200px;
+        border-radius: 70px;
+        background: #e6dfd8;
+        padding: 100px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+
+        .title {
+            width: 500px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: 0.22px;
+
+            color: #292F36;
+        }
+
+        .rateContainer {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}

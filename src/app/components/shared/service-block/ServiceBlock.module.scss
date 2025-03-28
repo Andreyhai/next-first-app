@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+.ServiceBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 40px;
+    gap: 60px;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        .title {
+            font-family: "DM Serif Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 39px;
+            text-align: center;
+            letter-spacing: 0.22px;
+
+            color: #292f36;
+        }
+
+        .subtitle {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            text-align: center;
+            letter-spacing: 0.22px;
+
+            color: #4d5053;
+        }
+    }
+
+    .button {
+        background: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .buttonText {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: 0.36px;
+
+            color: #4d5053;
+        }
+
+        .buttonIcon {
+            width: 24px;
+            height: 17px;
+        }
+    }
+}

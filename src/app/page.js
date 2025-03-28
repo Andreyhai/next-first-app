@@ -51,6 +51,13 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <div className="flex items-center justify-center gap-4 sm:gap-8">
+          {[1,2,3,4,5].map((block) => {
+            return (
+              <div key={block} className="flex items-center justify-center p-5 bg-amber-500 w-2.5 h-2.5 hover:rotate-45 " />
+            )
+          })}
+        </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a

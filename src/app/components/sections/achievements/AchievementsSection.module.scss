@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+.AchievementsSection {
+    display: flex;
+    justify-content: center;
+    background: #e6dfd8;
+    margin: 150px 0px;
+    
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .achievementsBlock {
+            display: flex;
+            .achievement {
+                display: flex;
+                flex-direction: column;
+                padding: 0px 65px;
+                margin: 100px 0;
+
+                .title {
+                    font-family: "DM Serif Display";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 85px;
+                    line-height: 128px;
+                    text-align: center;
+                    letter-spacing: 1.7px;
+                    margin: 0px;
+
+                    color: #cda274;
+                }
+
+                .description {
+                    font-family: "Jost";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 33px;
+                    text-align: center;
+                    letter-spacing: 0.22px;
+                    margin: 0px;
+
+                    color: #4d5053;
+                }
+            }
+        }
+    }
+}

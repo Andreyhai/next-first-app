@@ -1,0 +1,99 @@
+.footer {
+    padding: 26px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+
+        .footerBlock {
+            display: flex;
+            gap: 10px;
+            .block {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 30%;
+
+                .logo {
+                    display: flex;
+                    gap: 10px;
+                }
+
+                p {
+                    width: 90%;
+                }
+
+                .title {
+                    font-family: "DM Serif Display";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 38px;
+                    letter-spacing: 0.22px;
+
+                    color: #292f36;
+                }
+                .link {
+                    font-family: "Jost";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 33px;
+                    letter-spacing: 0.22px;
+
+                    color: #4d5053;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #cda274;
+                    }
+                }
+
+                .socials {
+                    display: flex;
+                    gap: 10px;
+                    padding: 20px 0;
+                }
+            }
+        }
+
+        .footerCopyRight {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 1px solid #E5E5E5;
+
+            .defaultText {
+                font-family: "Jost";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 33px;
+                /* identical to box height, or 150% */
+                text-align: center;
+                letter-spacing: 0.22px;
+
+                color: #4d5053;
+            }
+
+            .goldText {
+                font-family: "Jost";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 33px;
+                /* identical to box height, or 150% */
+                text-align: center;
+                letter-spacing: 0.22px;
+
+                color: #cda274;
+            }
+        }
+    }
+}

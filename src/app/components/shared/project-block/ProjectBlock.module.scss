@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ProjectBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 70px;
+    width: 45%;
+    padding: 15px;
+    border: 0.1px dashed #000;
+    border-radius: 10px 80px 10px 10px;
+    // background: #969696;
+    backdrop-filter: blur(10px); // Регулирует степень размытия
+    background: rgba(255, 255, 255, 0.2); // Цвет с прозрачностью
+    &:hover {
+        transform: scale(1.05); // Увеличиваем карточку
+        z-index: 2;
+        transition-duration: 190ms;
+        cursor: pointer;
+    }
+
+
+    
+
+    .image {
+        // background-image: url("../../../assets/images/backgrounds/HeroBG.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 80px 0 0;
+        width: 100%;
+        height: 640px;
+        
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+
+        .infoText {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                font-family: "DM Serif Display";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 38px;
+                letter-spacing: 0.22px;
+                margin: 0;
+
+                color: #292f36;
+
+            }
+
+            .subtitle {
+                font-family: "Jost";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 33px;
+                letter-spacing: 0.22px;
+                margin: 0;
+
+                color: #4d5053;
+
+            }
+        }
+
+        
+    }
+}
+
+    // Блюрим остальные карточки
+    .projectBlock:not(:hover) {
+        filter: blur(5px);
+    }
